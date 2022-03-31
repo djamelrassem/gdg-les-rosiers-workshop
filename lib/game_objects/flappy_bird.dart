@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FlappyBird extends StatelessWidget {
   final double size;
-  const FlappyBird({Key? key, this.size = 32}) : super(key: key);
+  const FlappyBird({Key? key, this.size = 98}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
