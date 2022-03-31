@@ -16,9 +16,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlappyBird(
-              size: 98,
-            ),
+            FlappyBird(),
             SizedBox(
               width: width / 2,
               child: FittedBox(
@@ -35,6 +33,9 @@ class HomeScreen extends StatelessWidget {
               height: 24,
             ),
             InkWell(
+              onDoubleTap: () {
+                print('hello world');
+              },
               onTap: () {
                 Navigator.push(
                   context,
